@@ -28,24 +28,42 @@ Open `index.html` in a browser, or use a local server:
 npx serve .
 ```
 
-## Deploy (GitHub Pages)
+## Deploy (GitHub Pages) — follow exactly
 
-**Important:** Use **GitHub Actions** as the Pages source (not “Deploy from a branch”).
+GitHub still reports Pages as **not enabled** on this repo. Do this once:
 
-1. Open [Settings → Pages](https://github.com/Machaudhary2024/Portfolio1.0/settings/pages)
-2. Under **Build and deployment → Source**, choose **GitHub Actions**
-3. Save, then go to [Actions](https://github.com/Machaudhary2024/Portfolio1.0/actions) and run **Deploy to GitHub Pages** (or push to `main` to trigger it)
-4. Wait 1–3 minutes. Your site will be at:
+### Step 1 — Open Pages settings
+[github.com/Machaudhary2024/Portfolio1.0/settings/pages](https://github.com/Machaudhary2024/Portfolio1.0/settings/pages)
 
-   **https://machaudhary2024.github.io/Portfolio1.0/**
+### Step 2 — Configure source
+Under **Build and deployment**:
 
-If you still see 404, try opening:
+| Setting | Value |
+|---------|-------|
+| **Source** | Deploy from a branch |
+| **Branch** | `gh-pages` |
+| **Folder** | `/ (root)` |
 
-**https://machaudhary2024.github.io/Portfolio1.0/index.html**
+Click **Save**.
 
-### Alternative (no Actions)
+> **Do not** choose “GitHub Actions” unless you switch the workflow — use **Deploy from a branch** with `gh-pages`.
 
-Set Source to **Deploy from a branch** → Branch: **main** → Folder: **/ (root)** → Save.
+### Step 3 — Wait & visit
+Wait 2–5 minutes, then open:
+
+- **https://machaudhary2024.github.io/Portfolio1.0/**
+- or **https://machaudhary2024.github.io/Portfolio1.0/index.html**
+
+### If still 404 — try `main` branch instead
+| Branch | Folder |
+|--------|--------|
+| `main` | `/ (root)` |
+
+Site files are at the repo root **and** in `/docs` (either folder works).
+
+### After it works
+You should see a green banner on the Pages settings page:
+`Your site is live at https://machaudhary2024.github.io/Portfolio1.0/`
 
 ## Tech Stack
 
