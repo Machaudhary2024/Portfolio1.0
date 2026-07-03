@@ -28,42 +28,35 @@ Open `index.html` in a browser, or use a local server:
 npx serve .
 ```
 
-## Deploy (GitHub Pages) — follow exactly
+## Deploy (GitHub Pages) — IMPORTANT
 
-GitHub still reports Pages as **not enabled** on this repo. Do this once:
+The `gh-pages` branch deploy was failing. Use **`main`** branch instead:
 
-### Step 1 — Open Pages settings
-[github.com/Machaudhary2024/Portfolio1.0/settings/pages](https://github.com/Machaudhary2024/Portfolio1.0/settings/pages)
+### Fix in 30 seconds
 
-### Step 2 — Configure source
-Under **Build and deployment**:
+1. Open **[Settings → Pages](https://github.com/Machaudhary2024/Portfolio1.0/settings/pages)**
+2. Under **Build and deployment → Source**, select **Deploy from a branch**
+3. Set **Branch: `main`** and **Folder: `/ (root)`**
+4. Click **Save**
+5. Wait 2–5 minutes, then visit:
 
-| Setting | Value |
-|---------|-------|
-| **Source** | Deploy from a branch |
-| **Branch** | `gh-pages` |
-| **Folder** | `/ (root)` |
+   **https://machaudhary2024.github.io/Portfolio1.0/**
 
-Click **Save**.
+### If you still see 404
 
-> **Do not** choose “GitHub Actions” unless you switch the workflow — use **Deploy from a branch** with `gh-pages`.
+Try these URLs (the dot in the repo name can cause caching delays):
 
-### Step 3 — Wait & visit
-Wait 2–5 minutes, then open:
+- https://machaudhary2024.github.io/Portfolio1.0/index.html
+- https://machaudhary2024.github.io/Portfolio1.0/?v=1
 
-- **https://machaudhary2024.github.io/Portfolio1.0/**
-- or **https://machaudhary2024.github.io/Portfolio1.0/index.html**
+Or switch folder to **`/docs`** (site files are duplicated there too).
 
-### If still 404 — try `main` branch instead
-| Branch | Folder |
-|--------|--------|
-| `main` | `/ (root)` |
+### Confirm it worked
 
-Site files are at the repo root **and** in `/docs` (either folder works).
-
-### After it works
-You should see a green banner on the Pages settings page:
+On the Pages settings page you should see a green box:
 `Your site is live at https://machaudhary2024.github.io/Portfolio1.0/`
+
+Check **[Actions](https://github.com/Machaudhary2024/Portfolio1.0/actions)** — the latest **"pages build and deployment"** run should show ✅ success (not ❌ deploy failure).
 
 ## Tech Stack
 
