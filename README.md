@@ -30,11 +30,22 @@ npx serve .
 
 ## Deploy (GitHub Pages)
 
-This repo is configured to deploy from the `main` branch root.
+**Important:** Use **GitHub Actions** as the Pages source (not “Deploy from a branch”).
 
-1. Push to `main`
-2. Go to **Settings → Pages → Source → Deploy from branch → `main` / `/ (root)`**
-3. Your site will be live at `https://machaudhary2024.github.io/Portfolio1.0/`
+1. Open [Settings → Pages](https://github.com/Machaudhary2024/Portfolio1.0/settings/pages)
+2. Under **Build and deployment → Source**, choose **GitHub Actions**
+3. Save, then go to [Actions](https://github.com/Machaudhary2024/Portfolio1.0/actions) and run **Deploy to GitHub Pages** (or push to `main` to trigger it)
+4. Wait 1–3 minutes. Your site will be at:
+
+   **https://machaudhary2024.github.io/Portfolio1.0/**
+
+If you still see 404, try opening:
+
+**https://machaudhary2024.github.io/Portfolio1.0/index.html**
+
+### Alternative (no Actions)
+
+Set Source to **Deploy from a branch** → Branch: **main** → Folder: **/ (root)** → Save.
 
 ## Tech Stack
 
