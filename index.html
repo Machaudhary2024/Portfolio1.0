@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mehar Akbar — CS student at FAST-NUCES building AI, web & mobile products. Open to internships and full-time roles." />
+  <meta name="author" content="Mehar Akbar" />
+  <title>Mehar Akbar | Software & AI Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--1" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--2" aria-hidden="true"></div>
+
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="nav__logo">
+        <span class="nav__logo-bracket">&lt;</span>MA<span class="nav__logo-bracket">/&gt;</span>
+      </a>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Credentials</a></li>
+        <li><a href="#contact" class="nav__cta">Hire Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <div class="hero__badge reveal">
+            <span class="pulse-dot"></span>
+            Available for opportunities
+          </div>
+          <h1 class="hero__title reveal">
+            Hi, I'm <span class="gradient-text">Mehar Akbar</span>
+          </h1>
+          <p class="hero__subtitle reveal">
+            I turn ideas into <span id="typedText"></span><span class="cursor-blink">|</span>
+          </p>
+          <p class="hero__desc reveal">
+            Computer Science student at <strong>FAST-NUCES</strong> · Operations Lead at
+            <strong>GDG on Campus</strong> · Building generative AI systems, full-stack web apps,
+            and mobile products that people actually use.
+          </p>
+          <div class="hero__stats reveal">
+            <div class="stat">
+              <span class="stat__num" data-count="12">0</span>
+              <span class="stat__label">GitHub Projects</span>
+            </div>
+            <div class="stat stat--text">
+              <span class="stat__num">91st</span>
+              <span class="stat__label">NSCT Percentile</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num" data-count="4">0</span>
+              <span class="stat__label">GAN Architectures</span>
+            </div>
+          </div>
+          <div class="hero__actions reveal">
+            <a href="#projects" class="btn btn--primary">See My Work</a>
+            <a href="#contact" class="btn btn--outline">Let's Talk</a>
+            <a href="https://github.com/Machaudhary2024" target="_blank" rel="noopener" class="btn btn--ghost" aria-label="GitHub">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.395-.135-.345-.72-1.395-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/meher21/" target="_blank" rel="noopener" class="btn btn--ghost" aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="hero__visual reveal">
+          <div class="hero__card">
+            <img src="https://avatars.githubusercontent.com/u/166997793?v=4" alt="Mehar Akbar" class="hero__avatar" width="280" height="280" />
+            <div class="hero__card-glow"></div>
+            <div class="code-snippet">
+              <div class="code-snippet__bar">
+                <span></span><span></span><span></span>
+              </div>
+              <pre><code><span class="code-kw">const</span> mehar = {
+  role: <span class="code-str">"Full-Stack & AI Dev"</span>,
+  campus: <span class="code-str">"FAST-NUCES FSD"</span>,
+  stack: [<span class="code-str">"PyTorch"</span>, <span class="code-str">"React"</span>, <span class="code-str">"Node"</span>],
+  openToWork: <span class="code-bool">true</span>
+};</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-hint" aria-label="Scroll down">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__tag">// about me</span>
+          <h2 class="section__title">Engineer at heart,<br />builder by habit</h2>
+        </div>
+        <div class="about__grid">
+          <div class="about__text reveal">
+            <p>
+              Hey! I'm <strong>Mehar Akbar</strong>, a Computer Science student at
+              <strong>FAST-NUCES Faisalabad</strong> who loves turning ideas into clean,
+              functional software — from generative AI pipelines to engaging websites and mobile apps.
+            </p>
+            <p>
+              I lead operations for <strong>Google Developer Groups on Campus</strong> and serve as
+              <strong>Vice President of Silent Steps</strong>. Whether it's training GANs from scratch,
+              shipping a React Native health app, or deploying on AWS EC2 — I ship end-to-end.
+            </p>
+            <p>
+              <strong>Looking for internships and full-time roles</strong> where I can contribute to
+              impactful products and grow with a strong engineering team.
+            </p>
+          </div>
+          <div class="about__highlights reveal">
+            <div class="highlight-card">
+              <div class="highlight-card__icon">🎓</div>
+              <h3>B.S. Computer Science</h3>
+              <p>FAST-NUCES · 2022 – 2026</p>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-card__icon">⚙️</div>
+              <h3>GDG Operations Lead</h3>
+              <p>Google Developer Groups on Campus, FAST-NUCES CFD</p>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-card__icon">🏆</div>
+              <h3>IEEE FSYWC Ambassador</h3>
+              <p>Top 6th Ambassador · Oct 2025</p>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-card__icon">📊</div>
+              <h3>HEC NSCT — 91st Percentile</h3>
+              <p>National Skill Competency Test · 63/100</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__tag">// tech stack</span>
+          <h2 class="section__title">Tools I ship with</h2>
+        </div>
+        <div class="skills__grid reveal">
+          <div class="skill-category">
+            <h3>AI / ML</h3>
+            <div class="skill-tags">
+              <span>PyTorch</span><span>TensorFlow</span><span>GANs</span><span>Diffusion Models</span>
+              <span>Computer Vision</span><span>NLP</span><span>Gradio</span><span>Streamlit</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Web & Mobile</h3>
+            <div class="skill-tags">
+              <span>HTML/CSS</span><span>JavaScript</span><span>React</span><span>React Native</span>
+              <span>Node.js</span><span>UI/UX Design</span><span>Responsive Design</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Cloud & Tools</h3>
+            <div class="skill-tags">
+              <span>AWS EC2</span><span>Git/GitHub</span><span>Python</span><span>Jupyter</span>
+              <span>Linux</span><span>Prompt Engineering</span><span>Figma</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__tag">// featured work</span>
+          <h2 class="section__title">Projects that prove I build</h2>
+          <p class="section__desc">Real repos. Real code. From research-grade AI to production-ready apps.</p>
+        </div>
+        <div class="projects__grid">
+          <article class="project-card reveal featured">
+            <div class="project-card__badge">Featured</div>
+            <div class="project-card__icon">🤰</div>
+            <h3>Wombly</h3>
+            <p>Maternal health & toddler care mobile app built with React Native. End-to-end product for real users.</p>
+            <div class="project-card__tags">
+              <span>React Native</span><span>JavaScript</span><span>Mobile</span>
+            </div>
+            <a href="https://github.com/Machaudhary2024/Wombly" target="_blank" rel="noopener" class="project-card__link">View on GitHub →</a>
+          </article>
+
+          <article class="project-card reveal featured">
+            <div class="project-card__badge">AI Research</div>
+            <div class="project-card__icon">🧠</div>
+            <h3>DDPM from Scratch</h3>
+            <p>Denoising Diffusion Probabilistic Model in PyTorch — cosine noise scheduling, U-Net with self-attention, trained on CelebA-HQ.</p>
+            <div class="project-card__tags">
+              <span>PyTorch</span><span>Diffusion</span><span>Deep Learning</span>
+            </div>
+            <a href="https://github.com/Machaudhary2024/DDPM" target="_blank" rel="noopener" class="project-card__link">View on GitHub →</a>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-card__icon">⚔️</div>
+            <h3>DCGAN vs WGAN-GP</h3>
+            <p>Head-to-head GAN comparison tackling mode collapse. Includes Gradio demo for live image generation.</p>
+            <div class="project-card__tags">
+              <span>GANs</span><span>PyTorch</span><span>Gradio</span>
+            </div>
+            <a href="https://github.com/Machaudhary2024/DCGAN-WGANgp" target="_blank" rel="noopener" class="project-card__link">View on GitHub →</a>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-card__icon">🖼️</div>
+            <h3>Pix2Pix Sketch → Photo</h3>
+            <p>Paired image translation with U-Net generator + PatchGAN. SSIM/PSNR evaluation & interactive Gradio demo.</p>
+            <div class="project-card__tags">
+              <span>Pix2Pix</span><span>Computer Vision</span><span>PyTorch</span>
+            </div>
+            <a href="https://github.com/Machaudhary2024/sketch-to-photo-pix2pix" target="_blank" rel="noopener" class="project-card__link">View on GitHub →</a>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-card__icon">🔄</div>
+            <h3>CycleGAN Translation</h3>
+            <p>Unpaired bidirectional sketch ↔ photo translation with cycle consistency & identity loss. No paired data needed.</p>
+            <div class="project-card__tags">
+              <span>CycleGAN</span><span>Domain Adaptation</span><span>PyTorch</span>
+            </div>
+            <a href="https://github.com/Machaudhary2024/Unpaired_Image_ranslation" target="_blank" rel="noopener" class="project-card__link">View on GitHub →</a>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-card__icon">🛍️</div>
+            <h3>NSMNIA Wardrobe</h3>
+            <p>Full e-commerce front-end for a Pakistani traditional clothing brand — auth, cart, product browsing.</p>
+            <div class="project-card__tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <a href="https://github.com/Machaudhary2024/NSMNIA-wardrobe" target="_blank" rel="noopener" class="project-card__link">View on GitHub →</a>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-card__icon">🧮</div>
+            <h3>Scientific Calculator</h3>
+            <p>Glassmorphism UI calculator with trig, logs, memory ops & full keyboard support.</p>
+            <div class="project-card__tags">
+              <span>JavaScript</span><span>CSS</span><span>UI Design</span>
+            </div>
+            <a href="https://github.com/Machaudhary2024/Calculator" target="_blank" rel="noopener" class="project-card__link">View on GitHub →</a>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-card__icon">🛰️</div>
+            <h3>Satellite Image Enhancement</h3>
+            <p>Automatic image enhancement using logarithmic transformation and histogram equalization.</p>
+            <div class="project-card__tags">
+              <span>Python</span><span>OpenCV</span><span>Image Processing</span>
+            </div>
+            <a href="https://github.com/Machaudhary2024/Satellite_image_enhancement" target="_blank" rel="noopener" class="project-card__link">View on GitHub →</a>
+          </article>
+        </div>
+        <div class="projects__cta reveal">
+          <a href="https://github.com/Machaudhary2024" target="_blank" rel="noopener" class="btn btn--outline">
+            Explore all 12 repos on GitHub →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section class="section section--alt" id="certifications">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__tag">// credentials</span>
+          <h2 class="section__title">Awards & achievements</h2>
+        </div>
+        <div class="certs__grid">
+          <div class="cert-card reveal">
+            <div class="cert-card__icon">🏅</div>
+            <div class="cert-card__body">
+              <h3>IEEE FSYWC'25 — Top 6th Ambassador</h3>
+              <p class="cert-card__issuer">IEEE Future Skills Young Professionals Workshop Conference</p>
+              <p>Received framed Ambassador Certificate from Dr. Shahzad Sarfraz for outstanding contribution.</p>
+              <span class="cert-card__date">October 2025</span>
+            </div>
+          </div>
+          <div class="cert-card reveal">
+            <div class="cert-card__icon">📋</div>
+            <div class="cert-card__body">
+              <h3>HEC National Skill Competency Test</h3>
+              <p class="cert-card__issuer">Higher Education Commission · MoITT · PSEB · P@SHA</p>
+              <p>Scored 63/100 — <strong>91st percentile</strong> nationally among all candidates.</p>
+              <span class="cert-card__date">2025</span>
+            </div>
+          </div>
+          <div class="cert-card reveal">
+            <div class="cert-card__icon">☁️</div>
+            <div class="cert-card__body">
+              <h3>AWS Cloud Deployment</h3>
+              <p class="cert-card__issuer">NUCES-FAST Cloud Computing Course</p>
+              <p>Provisioned EC2 instances, configured security groups, SSH access & deployed live web services on AWS.</p>
+              <span class="cert-card__date">2025</span>
+            </div>
+          </div>
+          <div class="cert-card reveal">
+            <div class="cert-card__icon">🚀</div>
+            <div class="cert-card__body">
+              <h3>GDG on Campus — Operations Lead</h3>
+              <p class="cert-card__issuer">Google Developer Groups · FAST-NUCES CFD</p>
+              <p>Leading campus developer community operations, events, and initiatives for 200+ student developers.</p>
+              <span class="cert-card__date">2025 – Present</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact__wrapper">
+          <div class="contact__info reveal">
+            <span class="section__tag">// let's connect</span>
+            <h2 class="section__title">Ready to build<br />something great?</h2>
+            <p>
+              I'm actively looking for <strong>internships and full-time roles</strong> in software engineering,
+              AI/ML, and full-stack development. Drop me a message — I reply within 24 hours.
+            </p>
+            <div class="contact__details">
+              <a href="mailto:machaudhary87@gmail.com" class="contact__item">
+                <span class="contact__item-icon">✉️</span>
+                machaudhary87@gmail.com
+              </a>
+              <a href="https://www.linkedin.com/in/meher21/" target="_blank" rel="noopener" class="contact__item">
+                <span class="contact__item-icon">💼</span>
+                linkedin.com/in/meher21
+              </a>
+              <a href="https://github.com/Machaudhary2024" target="_blank" rel="noopener" class="contact__item">
+                <span class="contact__item-icon">💻</span>
+                github.com/Machaudhary2024
+              </a>
+              <div class="contact__item">
+                <span class="contact__item-icon">📍</span>
+                Faisalabad, Pakistan
+              </div>
+            </div>
+          </div>
+          <form class="contact__form reveal" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="John Doe" required autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" placeholder="john@company.com" required autocomplete="email" />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Job opportunity / Collaboration" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about the role or project..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full" id="submitBtn">
+              <span class="btn__text">Send Message</span>
+              <span class="btn__loader" hidden></span>
+            </button>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© 2026 <strong>Mehar Akbar</strong>. Built with passion & caffeine.</p>
+      <div class="footer__links">
+        <a href="https://github.com/Machaudhary2024" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/meher21/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:machaudhary87@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
